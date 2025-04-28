@@ -1,0 +1,64 @@
+import java.util*;
+class LightBulb
+{
+private boolean state;
+LightBulb()
+{
+Boolean bulb=false;
+}
+LightBulb(Boolean state)
+{
+this=state=state;
+}
+void turnOn()
+{
+if(state==on)
+{
+bulb=true;
+System.out.println("current state is :"+bulb);
+}
+}
+void turnoff()
+{
+if(state==of)
+{
+bulb=false;
+System.out.println("current state is :"+bulb);
+}
+}
+}
+public class LightBulbApp
+{
+public static void main(String x[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter a Light Bulb current state:");
+String state=sc.nexLine();
+LightBulb lb=new LightBulb(state);
+lb.turnOn();
+lb.turnoff();
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

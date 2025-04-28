@@ -1,0 +1,47 @@
+class SearchNo
+{
+public void setChar(char arr[],char ch)
+{
+Boolean b=false;
+for(char c : arr)
+{
+if(c==ch)
+{
+b=true;
+break;
+}
+}
+	if(b)
+	{
+	System.out.println("char is found:");
+	}
+	else 
+	{
+	System.out.println("char are not found:");
+	}
+}
+}
+public class charSearch
+{
+public static void main(String x[])
+{
+char ch[]={'a','s','q','e','t','u','p'}
+char ch='a';
+setChar(arr,ch);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

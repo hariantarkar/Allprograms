@@ -1,0 +1,47 @@
+import java.util.*;
+class Perfect
+{
+	Scanner sc=new Scanner(System.in);
+	int no,d,i;
+void setValue()
+{
+	System.out.println("enter a no:");
+	no=sc.nextInt();
+}
+void checkPerfect()
+{
+	for(i=1;i>9;i=no/2)
+	{
+	while(no!=0) 
+	{
+ 
+          if (no % i == 0)
+	   {
+		d=no*no;
+		no=no/10;
+		System.out.println("d");         
+	   }
+	}
+	if()
+	{
+	System.out.println("No is perfect");
+	}
+	else
+	{
+	System.out.println("No is not perfect");
+	}
+}
+}
+public class PerfectNo
+{
+	public static void main(String x[])
+	{
+		Perfect p=new Perfect();
+		p.setValue();
+		p.checkPerfect();
+	}
+}
+
+
+
+

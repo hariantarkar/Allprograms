@@ -1,0 +1,23 @@
+class Rectangle
+{
+private int breadth;
+private int length;
+Rectangle (int breadth,int length)
+{
+	this.breadth=breadth;
+	this.length=length;
+}
+void area()
+{
+int temp;
+temp=length*breadth;
+System.out.println("area is:"+temp);
+}
+}
+public class RectApp
+{
+public static void main(String x[])
+{
+Rectangle r1=new Rectangle(5,5);
+}
+}

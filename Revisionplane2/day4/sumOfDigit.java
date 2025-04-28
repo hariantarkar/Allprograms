@@ -1,0 +1,27 @@
+import java.util.*;
+public class sumOfDigit
+{
+	public static void main(String x[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter a digit :");
+		int no=sc.nextInt();
+		
+		System.out.println("no is  :"+no);
+		int rem,sum=0;
+		if(no>=10000 && no<=99999)
+		{
+			while(no!=0)
+			{
+				rem=no%10;
+				sum=sum+rem;
+				no=no/10;
+			}
+			System.out.println("sum of digit :"+sum);
+		}
+		else
+		{
+			System.out.println("please enter five or more digit:");
+		}
+	}
+}

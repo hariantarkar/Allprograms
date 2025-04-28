@@ -1,0 +1,59 @@
+class Value
+{
+int a,b;
+void setValue(int x.int y)
+{
+a=x;
+b=y;
+}
+int getResult()
+{
+return 0;
+}
+}
+class Add extends Value
+{
+int getResult()
+{
+return 0;
+}
+}
+class Mul extends Value
+{
+int getResult()
+{
+return 0;
+}
+}
+class calculator
+{
+void perfromshow(Add ad)
+{
+int result=ad.getResult();
+System.out.println("result is:"+result);
+}
+}
+public class DyPoloApp
+{
+public static void main(String x[])
+{
+calculator c1=new calculator();
+Add a1=new Add();
+a1.setValue(1,5);
+c1.perfromshow(a1);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+hight:20%;
+width:100%;
+background-color:blue;
+display:flex;

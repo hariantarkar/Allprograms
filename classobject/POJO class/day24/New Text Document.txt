@@ -1,0 +1,42 @@
+class Employee
+{
+	private string  name;
+	private int  salary;
+	private string department;
+public void setName(String n)
+   { name=n;
+   }
+   public String getName()
+   { return name;
+   }
+public void setSalary( int s)
+{
+	salary=s;
+}
+	public int getSalary()
+	{
+	return salary;
+	}
+public void setDeparment(string d)
+{
+	department=d;
+}
+	public int getDepartment()
+	{
+	return department;
+	}
+}
+class EmployeeMethod
+{
+	public static void main(String	x[])
+	{
+	Employee emp=new Employee();
+	emp.setName("xyz");
+	emp.setSalary(1000);
+	emp.setDeparment("abc");
+	System.out.println("employee name is:"+emp.getName());
+	System.out.println("employee salary is:"+emp.getSalary());
+	System.out.println("employee department is:"+emp.getDepartment());
+	}
+}
+

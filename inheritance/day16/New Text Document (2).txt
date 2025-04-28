@@ -1,0 +1,35 @@
+class StringRev
+{	int a[];
+StringRev(int a[])
+{
+this.a=a;
+}
+public void show()
+{
+for(int i=0;j=a.length-1,i=a.length/2;i++,j--)
+{
+int temp=a[i];
+a[i]=a[j];
+a[j]=temp;
+}
+	for(int i=0;i<a.length;i++)
+	{
+	System.out.println("Rev array is:"+a[i]);
+	}
+}
+}
+public class strRevApp
+{
+public static void main(String x[])
+{
+int a[]=new int[5];
+Scanner sc=new Scanner(System.in);
+System.out.println("enter a no");
+for(int i=0;i<a.length;i++)
+{
+a[i]=sc.nextInt();
+}
+StringRev r1=new StringRev(a);
+r1.show();
+}
+}

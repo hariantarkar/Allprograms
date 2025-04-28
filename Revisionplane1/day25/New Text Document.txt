@@ -1,0 +1,24 @@
+class Student
+{
+	private int rollNo;
+	private int marks;
+Student()
+{
+}
+Student(int rollNo,int marks)
+{
+	this.rollNo=rollNo;
+	this.marks=marks;
+}
+void display()
+{
+System.out.println(rollNo+" "+marks);
+}
+}
+public class studentApp
+{
+public static void main(String x[])
+{
+Student s1=new Student(01,90);
+}
+}
