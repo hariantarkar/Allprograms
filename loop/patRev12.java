@@ -10,7 +10,7 @@ class patRev12
 		{
 			if(j<=i)
 			{
-			System.out.print(" j");
+			System.out.print(" * ");
 
 			}
 			else

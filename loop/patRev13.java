@@ -3,7 +3,7 @@ class patRev13
 	public static void main(String x[])
 	{
 	int n=5,m=5;
-	int i,j,num=1;
+	int i,j;
 	for(i=1;i<=n;i++)
 	{
 		for(j=1;j<=m;j++)
@@ -11,7 +11,7 @@ class patRev13
 			if(j<=i)
 			{
 			System.out.print("1");
-			num++;
+		
 			}
 			else
 			{

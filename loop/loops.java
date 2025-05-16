@@ -7,15 +7,21 @@ public class loops
 	int num=1;
 		for(i=1;i<=n;i++)
 		{
-			for(j=1;j<=m-i;j++)
+			for(j=1;j<=6-i;j++)
 			{
 				if(i%2==0)
 				{
 					System.out.print("  "+ num);
 					num++;
 				}
+				else
+				{
+					System.out.println(" ");
+				}
+					
 			}
 		System.out.println(" ");
 		}
 	}
 }
+

@@ -1,0 +1,10 @@
+/*3. Insert a String in the Middle of Another String Using StringBuilder
+Problem:
+Write a program that takes two strings and inserts the second string into
+the middle of the first one using StringBuilder.
+Example:
+Input: first = "HelloWorld"
+second = "Java"
+Output: "HelloJavaWorld"*/
+public class InsertStringMiddle
+{

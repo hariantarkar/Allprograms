@@ -8,7 +8,7 @@ class patRev16
 	{
 		for(j=1;j<=n-i;j++)
 		{
-		System.out.print("- ");
+		System.out.print(" ");
 		}
 		for(j=1;j<=m;j++)
 		{
@@ -21,4 +21,4 @@ class patRev16
 
 	}
 }
-		
+		9

@@ -1,0 +1,6 @@
+//fetch all drive list from hard disk.
+public class FileTest
+{
+	public static void main(String x[])
+	{
+	

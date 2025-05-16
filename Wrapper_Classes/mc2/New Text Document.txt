@@ -1,0 +1,3 @@
+//convert primitive int value to integer object.
+public class PriToInt
+{

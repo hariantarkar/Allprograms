@@ -1,24 +1,21 @@
-class patRev7
+class patRev7 
 {
-	public static void main(String x[])
+    public static void main(String x[])
 	{
-	int n=9,m=5;
-	int i,j;
-	for(i=1;i<=n;i++)
-	{
-		for(j=1;j<=m;j++)
-		{
-			if(j>=i+1&&j<=10-i)
+        int n = 9;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++)
 			{
-			System.out.print("*");
-			}
-			else
-			{
-			System.out.print(" ");
-			}
-		}
-		System.out.println(" ");
-	}
-	}
+                if (j >= i && j <= n - i + 1)
+				{
+                    System.out.print("*");
+                } 
+				else
+				{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
 }
-		
