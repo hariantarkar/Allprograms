@@ -1,0 +1,28 @@
+input{
+    width: 70%;
+    height: 40%;
+    margin-left: 10px;
+    
+}
+.s{
+ width: 70%;
+height: 40%; 
+ margin-left: 10px;  
+}
+.first{
+    width: 50%;
+    background-color: palegreen;
+    color: black;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 350px;
+    border: 2px solid black;
+    
+}
+.second{
+    width: 5%;
+    height: 5%;
+}
+body{
+    background-color: aqua;
+}

@@ -1,0 +1,157 @@
+Database changed
+mysql> create table Book(b_id int primary key ,title varchar(100)not null,author varchar(100),category varchar(50),price decimal(8,2),quantity int);
+Query OK, 0 rows affected (0.03 sec)
+
+
+
+ create table member(m_id int primary key ,name varchar(100),email varchar(100),join_date date);
+Query OK, 0 rows affected (0.03 sec)
+
+
+ create table Issue(i_id int(5) primary key,i_date date ,r_date date ,b_id int(5),foreign key(b_id)references Book(b_id),m_id int(5),foreign key(m_id)references member(m_id));
+Query OK, 0 rows affected, 3 warnings (0.04 sec)
+
+
+1:  select *from Book where title like 'Data%';
+
+
+2: select *from Book where category like 'science';
+or
+
+ select *from Book where category like 'science%';
+3
+
+3:  select category from Book where quantity>10;
+
+10:  select *from Book;
+    -> //
++------+---------+--------+----------+--------+----------+
+| b_id | title   | author | category | price  | quantity |
++------+---------+--------+----------+--------+----------+
+|    1 | Data    | shyam  | science  | 100.00 |       15 |
+|    2 | math    |        | marathi  | 200.00 |        8 |
+|    3 | hindi   | ram    | science  | 300.00 |       20 |
+|    4 | english | ABC    | scienceA | 400.00 |       40 |
+|    5 | english | ABC    | Arts     | 200.00 |       30 |
++------+---------+--------+----------+--------+----------+
+5 rows in set (0.00 sec)
+10 mysql> delimiter //
+mysql> create procedure getInfo(id int(5))
+    -> begin
+    -> select *from Book where b_id=id;
+    -> end
+    -> //
+Query OK, 0 rows affected, 1 warning (0.02 sec)
+
+ call getInfo(1);
+    -> //
++------+-------+--------+----------+--------+----------+
+| b_id | title | author | category | price  | quantity |
++------+-------+--------+----------+--------+----------+
+|    1 | Data  | shyam  | science  | 100.00 |       15 |
++------+-------+--------+----------+--------+----------+
+1 row in set (0.00 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

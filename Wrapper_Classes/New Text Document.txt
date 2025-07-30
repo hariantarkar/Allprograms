@@ -1,5 +1,40 @@
-public class ConvertDoubleToInt
-{
-	public static void amin(String x[])
-	{
+import java.util.HashMap;
+
+public class LongestSubstringKDistinct {
+    
+    public static int lengthOfLongestSubstringKDistinct(String str, int k) {
+        if (str == null || k == 0) {
+            return 0;
+        }
+
+        int maxLength = 0;
+        int left = 0;
+        HashMap<Character, Integer> map = new HashMap<>();
+
+        for (int right = 0; right < str.length(); right++) {
+            char rightChar = str.charAt(right);
+            map.put(rightChar, map.getOrDefault(rightChar, 0) + 1);
+
+            while (map.size() > k) {
+                char leftChar = str.charAt(left);
+                map.put(leftChar, map.get(leftChar) - 1);
+                if (map.get(leftChar) == 0) {
+                    map.remove(leftChar);
+                }
+                left++;
+            }
+
+            maxLength = Math.max(maxLength, right - left + 1);
+        }
+
+        return maxLength;
+    }
+
+    // Driver code
+    public static void main(String[] args) {
+        System.out.println(lengthOfLongestSubstringKDistinct("eceba", 2));  // Output: 3
+        System.out.println(lengthOfLongestSubstringKDistinct("aa", 1));     // Output: 2
+    }
+}
+
 	

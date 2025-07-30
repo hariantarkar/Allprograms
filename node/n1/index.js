@@ -1,0 +1,18 @@
+let express=require("express");
+let path=require("path");
+let app=express();
+app.use(express.static("public"));
+let p=path.join(__dirname+"/public");
+app.get("/",(req,res)=>{
+	res.sendFile(p+"/register.html");
+});
+app.get("/save",(req,res)=>{
+	let name=req.query.name;
+	let email=req.query.email;
+	let contact=req.query.contact;
+	res.send(`name is ${name} <br> email ${email} <br> contact ${contact}`);
+});
+app.listen(3000,(req,res)=>{
+	console.log("server started");
+});
+

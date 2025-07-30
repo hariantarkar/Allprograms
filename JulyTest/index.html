@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <title>Form </title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+<body>
+    <form>
+    <div class="first">
+    <lable>
+        Name :</lable><br>
+        <input type="text" name="name" value="" placeholder="Enter Name"onkeyup="validateName(this.value)"/>
+        <span id="NameV"></span>
+
+    <br><br>
+    <lable>
+        Email :</lable><br>
+        <input type="text" name="email" value="" placeholder="Enter Email"/>
+
+     <br><br>
+    <lable>
+        Contact :</lable><br>
+        <input type="number" name="Contact" value="" placeholder="Enter Contact"onkeyup="validateContact(this.value)"/>
+        <span id="c"></span>
+
+    <br><br>
+    <lable><div class="second">
+        Gender  Male <input type="radio" name="male" value=""/>
+                Female  <input type="radio" name="Female" value=""/> 
+    </lable>
+    </div><br><br>
+     <lable>
+          DOB :</lable><br>
+        <input type="date" name="date" value="" placeholder="Enter date of birth"/>
+
+    <br><br>
+     <lable>
+        Address :</lable><br>
+        <input type="text" name="Address" value="" placeholder="Enter Address"/>
+
+     <br><br>
+     <lable>
+        Course :</lable><br>
+        <select class="s">
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>B.Sc</option>
+            <option>b.Com</option>
+
+        </select>
+
+        <br><br>
+      <lable>
+        Paaword :</lable><br>
+        <input type="text"  name="password" value="" placeholder="Enter password" onkeyup="Passwordvalidate(this.value)" />
+        <span id="passwordMessage"></span>
+
+     <br><br>
+    <lable>
+        Confirm password :</lable><br>
+        <input type="text"  id="pass" name="password" value="" placeholder="Enter confirm password"onkeyup="ConfumPassword(this.value)"/>
+        <span id="confirmPass"></span>
+    <br><br>
+     <input type="button" id="btn"name="button" value="Submit"/>
+    </div>
+    </form>
+</body>    
+</html>
